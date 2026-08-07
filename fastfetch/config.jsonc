@@ -12,33 +12,33 @@
         {
             "type": "os",
             "key": "󱄅",
-            "keyColor": "35"  // = color1
+            "keyColor": "36"  // = color1
         },
         {
             "type": "kernel",
             "key": "",
-            "keyColor": "35"
+            "keyColor": "36"
         },
         {
             "type": "packages",
             "format": "nix",
             "key": "󰏖",
-            "keyColor": "35"
+            "keyColor": "36"
         },
         {
             "type": "shell",
             "key": "",
-            "keyColor": "35"
+            "keyColor": "36"
         },
         {
             "type": "terminal",
             "key": "",
-            "keyColor": "35"
+            "keyColor": "36"
         },
         {
             "type": "wm",
             "key": "",
-            "keyColor": "35"
+            "keyColor": "36"
         },
         "break"
     ]
