@@ -2,44 +2,64 @@
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
         "type": "builtin",
-        "source": "nixos_small"  //change your os
-    },
+        "source": "arch_small",
+        "padding": {
+            "top": 0,
+            "left": 0,
+            "right": 2
+        }
+    }, 
     "display": {
-        "separator": " "
+        "separator": " -> "
     },
     "modules": [
-	"break",
         {
-            "type": "os",
-            "key": "󱄅",
-            "keyColor": "36"  // = color1
+            "type": "title",
+            "keyWidth": 10,
+            "format": "{6}{7}{8}"
+        },
+        {
+            "type": "custom",
+            "format": "───────────────────────────"
         },
         {
             "type": "kernel",
-            "key": "",
-            "keyColor": "36"
-        },
-        {
-            "type": "packages",
-            "format": "nix",
-            "key": "󰏖",
-            "keyColor": "36"
-        },
-        {
-            "type": "shell",
-            "key": "",
-            "keyColor": "36"
-        },
-        {
-            "type": "terminal",
-            "key": "",
-            "keyColor": "36"
+            "key": " ",
+            "keyColor": "yellow"
         },
         {
             "type": "wm",
-            "key": "",
-            "keyColor": "36"
+            "key": " ",
+            "keyColor": "blue"
         },
-        "break"
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "memory",
+            "key": "󰍛 ",
+            "keyColor": "magenta",
+            "format": "{1} / {2}"
+        },
+        {
+            "type": "uptime",
+            "key": "󰔛 ",
+            "keyColor": "green"
+        },
+        {
+            "type": "custom",
+            "format": "───────────────────────────"
+        },
+        {
+            "type": "custom",
+            "format": "  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[90m"
+        }
     ]
 }
