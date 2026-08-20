@@ -24,6 +24,7 @@ my_os = input('''Write your os :
 
 Write your option: ''')
 if my_os == "1":
+    print("sudo pacman -S fastfetch foot rofi swaybg waybar hyprland nvim tree-sitter ttf-jetbrains-mono-nerd git yazi")
     os.system("sudo pacman -S fastfetch foot rofi swaybg waybar hyprland nvim tree-sitter ttf-jetbrains-mono-nerd git yazi")
 elif my_os == "2":
     print("Write in configuration.nix: \nfastfetch\nfoot\nrofi\nswaybg\nwaybar\nhyprland\nnvim\ntree-sitter\nttf-jetbrains-mono-nerd\ngit\nyazi")
@@ -31,8 +32,10 @@ elif my_os == "2":
     p = input()
     del p
 elif my_os == "3":
+    print("sudo dnf install -y fastfetch foot rofi swaybg waybar hyprland nvim tree-sitter ttf-jetbrains-mono-nerd git yazi")
     os.system("sudo dnf install -y fastfetch foot rofi swaybg waybar hyprland nvim tree-sitter ttf-jetbrains-mono-nerd git yazi")
 elif my_os == "4":
+    print("sudo emerge --ask app-misc/fastfetch gui-apps/foot x11-misc/rofi gui-apps/swaybg gui-apps/waybar gui-hypr/hyprland app-editors/neovim dev-util/tree-sitter media-fonts/jetbrainsmono-nerd dev-vcs/git app-misc/yazi")
     os.system("sudo emerge --ask app-misc/fastfetch gui-apps/foot x11-misc/rofi gui-apps/swaybg gui-apps/waybar gui-hypr/hyprland app-editors/neovim dev-util/tree-sitter media-fonts/jetbrainsmono-nerd dev-vcs/git app-misc/yazi")
 else:
     print("Invalid argument!")
@@ -79,6 +82,5 @@ os.system(f"cp -r ./nvim/* {config}nvim")
 #yazi
 os.system(f"mkdir -p {config}yazi")
 os.system(f"cp -r ./yazi/* {config}yazi")
-
 
 
