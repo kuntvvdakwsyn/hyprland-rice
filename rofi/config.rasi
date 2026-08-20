@@ -32,4 +32,4 @@ configuration {
        switch modi) — pick whichever matches what you used it for. */
 }
 
-@theme "/home/nixa/.config/rofi/style.rasi"
+@theme "/home/X/.config/rofi/style.rasi"
