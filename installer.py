@@ -21,7 +21,7 @@ my_os = input('''Write your os :
 (2 - nixos)
 (3 - fedora)
 (4 - gentoo)
-
+(5 - something else)
 Write your option: ''')
 if my_os == "1":
     print("sudo pacman -S fastfetch foot rofi swaybg waybar hyprland nvim tree-sitter ttf-jetbrains-mono-nerd git yazi")
@@ -37,6 +37,8 @@ elif my_os == "3":
 elif my_os == "4":
     print("sudo emerge --ask app-misc/fastfetch gui-apps/foot x11-misc/rofi gui-apps/swaybg gui-apps/waybar gui-hypr/hyprland app-editors/neovim dev-util/tree-sitter media-fonts/jetbrainsmono-nerd dev-vcs/git app-misc/yazi")
     os.system("sudo emerge --ask app-misc/fastfetch gui-apps/foot x11-misc/rofi gui-apps/swaybg gui-apps/waybar gui-hypr/hyprland app-editors/neovim dev-util/tree-sitter media-fonts/jetbrainsmono-nerd dev-vcs/git app-misc/yazi")
+elif my_os == "5":
+    print("Install this pkgs: fasteftch foot rofi nvim swaybg waybar hyprland tree-sitter ttf-jetbrains-mono-nerd yazi")
 else:
     print("Invalid argument!")
     sys.exit(1)
