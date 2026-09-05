@@ -5,11 +5,14 @@
 }
 
 window#waybar {
-    background-color: rgba(30, 34, 42, 0.75); /* Gri/Sur închis cu transparență */
+    background-color: rgba(30, 34, 42, 0.90);
     color: #c0caf5;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-}
 
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+
+    padding: 0px 6px;
+}
 #workspaces,
 #window,
 #network,
