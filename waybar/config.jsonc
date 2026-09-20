@@ -5,26 +5,31 @@
     "layer": "top",
     "position": "top",
     "height": 34,
-    "spacing": 6,
-    "margin": "8px 18px 6px 18px",
+    "spacing": 10,
+    "margin":"6px 15px -4px 15px",
     "exclusive": true,
 
     "spacing": 10,
 
     "modules-left": [
-      "custom/my-power",
+      "custom/scripts",
+      "custom/separator",
       "hyprland/workspaces",
-      "hyprland/window",
+      "custom/separator",
+      "hyprland/window"
     ],
     "modules-center": [
-      "clock",
+      "clock"
 
     ],
 
     "modules-right": [
       "network",
+      "custom/separator",
       "pulseaudio",
+      "custom/separator",
       "battery", 
+      "custom/separator",
       "memory"
     ]
 }
