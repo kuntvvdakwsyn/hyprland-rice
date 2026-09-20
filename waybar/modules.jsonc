@@ -16,12 +16,11 @@
         "on-scroll-up": "brightnessctl set +5%",
         "on-scroll-down": "brightnessctl set 5%-"
     },
-    "custom/my-power": {
-        "format": " ⏻ ",
+    "custom/scripts": {
+        "format": " ",
         "tooltip": false,
-        "on-click": "/home/nixa/.config/waybar/power.sh"
+        "on-click": "$HOME/.config/waybar/scripts.sh"
     },
-
     "hyprland/window": {
         "format": "{title}",
         "max-length": 40,
@@ -34,10 +33,14 @@
             "(.*)code": "󰨞  VS Code",
             "(.*)Foot": "󰆍  Terminal",
             "(.*)waybar": "󱂬  Waybar",
+            "(.*)obsidian(.*)": "󰫆  Obsidian",
             "": "󰇄   Desktop"
         }
     },
-
+    "custom/separator": {
+        "format": "|",
+        "tooltip": false
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
