@@ -41,3 +41,30 @@ sudo emerge --ask \
     net-libs/nodejs \
     media-fonts/jetbrains-mono-nerd-font
 ```
+
+# For nixos:
+``` nix
+#/etc/nixos/configuration.nix under environment.systemPackages
+# ...
+environment.systemPackages = with pkgs; [
+  fastfetch
+  hyprland
+  swaybg
+  neovim
+  evince
+  foot
+  rofi
+  waybar
+  ripgrep
+  fd
+  gcc
+  gnumake
+  unzip
+  curl
+  gnutar
+  nodejs
+  nodePackages.npm
+  nerd-fonts.jetbrains-mono
+];
+# ...
+```
